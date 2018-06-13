@@ -20,7 +20,7 @@ getDishes(): Observable<Dish[]>{
 return this.restangular.all('dishes').getList();
 }
 getDish(id: number): Observable<Dish> {
-return this.restangular.one('dishes', id).get();
+return this.restangular.one('dishees', id).get();
 }
 getFeaturedDish(): Observable<Dish>{
 return this.restangular.all('dishes').getList({featured: true})
