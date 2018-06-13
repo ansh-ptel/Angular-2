@@ -59,7 +59,7 @@ fxLayoutGap="10px">
      <div class="container" fxLayout="column" fxLayoutGap="10px">
        <md-list *ngIf="leaders">
          <md-list-item *ngFor="let leader of leaders">
-           <img md-list-avatar src={{leader.image}} alt={{leader.name}}>
+           <img md-list-avatar src="{{BaseURL + leader.image}}" alt={{leader.name}}>
            <h4 md-line>{{leader.name}}</h4>
            <p md-line>{{leader.designation}}</p>
            <p md-line>{{leader.description}}</p>

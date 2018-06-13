@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { DishService } from './dish.service';
+import { ProcessHttpmsgService } from './process-httpmsg.service';
 
 describe('DishService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [DishService]
+      providers: [ProcessHttpmsgService]
     });
   });
 
-  it('should be created', inject([DishService], (service: DishService) => {
+  it('should be created', inject([ProcessHttpmsgService], (service: ProcessHttpmsgService) => {
     expect(service).toBeTruthy();
   }));
 });
